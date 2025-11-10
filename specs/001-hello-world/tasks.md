@@ -1,0 +1,54 @@
+---
+description: "Task list for Hello World Baseline feature implementation"
+---
+
+# Tasks: Hello World Baseline
+
+**Input**: Design documents from `/specs/001-hello-world/`
+**Prerequisites**: plan.md (required), spec.md (required for user stories)
+
+## Phase 1: Setup
+- [ ] T001 Create Vue default project by running `npm create vue@latest`
+- [ ] T002 Add basic README with setup and run instructions
+
+## Phase 2: User Story 1 - Display Hello World (P1)
+- [ ] T003 [US1] Create HelloWorld.vue component in src/components/HelloWorld.vue
+- [ ] T004 [US1] Add App.vue to render HelloWorld.vue with correct props in src/App.vue
+- [ ] T005 [US1] Add browser test: verify "Hello World" is visible (manual or automated)
+
+## Phase 3: User Story 2 - Run Unit Test (P2)
+- [ ] T006 [US2] Add unit test for HelloWorld.vue in tests/unit/HelloWorld.spec.ts
+- [ ] T007 [US2] Ensure test fails if text is missing (TDD)
+- [ ] T008 [US2] Ensure test passes when text is present
+
+## Phase 4: User Story 3 - Run End-to-End Test (P3)
+- [ ] T009 [US3] Add E2E test for Hello World in tests/e2e/hello.cy.ts
+- [ ] T010 [US3] Ensure E2E test fails if text is missing (TDD)
+- [ ] T011 [US3] Ensure E2E test passes when text is present
+
+## Phase 5: Error Handling & Constitution Compliance
+- [ ] T012 Add test to verify app fails gracefully if root element is missing or app fails to load (per FR-004) in tests/unit/HelloWorld.spec.ts
+- [ ] T013 Ensure all code changes are peer reviewed before merge
+- [ ] T014 Ensure CI pipeline runs all tests and lint checks before merge
+- [ ] T015 Ensure all releases use semantic versioning
+
+## Final Phase: Polish & Cross-Cutting
+- [ ] T016 Add comments and docstrings to all new files
+- [ ] T017 Add/verify quickstart.md for setup and test instructions
+- [ ] T018 Review for constitution compliance and best practices
+
+## Dependencies
+- Phase 1 (Setup) must be completed before any other phase
+- Phase 2 (User Story 1) must be completed before user stories 2 and 3
+- User stories are independent but should be implemented in priority order (US1 → US2 → US3)
+- Error handling and constitution compliance phase can be done in parallel with final user story
+- Polish phase can be done in parallel with final user story
+
+## Parallel Execution Examples
+- [ ] T003 [US1] Create HelloWorld.vue component in src/components/HelloWorld.vue
+- [ ] T006 [US2] Add unit test for HelloWorld.vue in tests/unit/HelloWorld.spec.ts
+- [ ] T009 [US3] Add E2E test for Hello World in tests/e2e/hello.cy.ts
+
+## Implementation Strategy
+- MVP: Complete Phase 1, Phase 2, and User Story 1 (Display Hello World)
+- Incremental: Add unit and E2E tests, error handling, constitution compliance, polish, and documentation in subsequent phases
