@@ -16,7 +16,7 @@ This project is a minimal Vue 3 + TypeScript application scaffolded with the off
    npm run dev
    ```
 
-   The app will be available at the URL shown in the terminal (usually http://localhost:5173).
+   The app will be available at the URL shown in the terminal (usually http://localhost:4173).
 
 ## Testing
 

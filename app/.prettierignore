@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+coverage/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.log
+.vscode/
+.idea/
+__tests__/
+__screenshots__/
+cypress/videos/
+cypress/screenshots/
+*.tmp

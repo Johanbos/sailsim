@@ -1,0 +1,14 @@
+node_modules/
+dist/
+build/
+coverage/
+*.min.js
+*.log
+*.tsbuildinfo
+__screenshots__/
+cypress/videos/
+cypress/screenshots/
+__tests__/
+*.tmp
+.vscode/
+.idea/

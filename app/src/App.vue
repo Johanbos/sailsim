@@ -1,14 +1,18 @@
 <script setup lang="ts">
+// App.vue: Main application shell
+// Imports router and HelloWorld component
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <!-- Main header with logo and navigation -->
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- Render HelloWorld baseline component -->
+      <HelloWorld />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -17,9 +21,13 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
+  <!-- Main content rendered by router -->
   <RouterView />
 </template>
 
+<!--
+  Styles for App.vue
+-->
 <style scoped>
 header {
   line-height: 1.5;
